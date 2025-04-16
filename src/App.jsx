@@ -14,7 +14,7 @@ function App() {
 
   // Fetch expenses from db.json
   useEffect(() => {
-    fetch('http://localhost:3000/expenses')
+    fetch('https://phase-2-wk-1-code-challenge-1.onrender.com/expenses')
       .then(response => response.json())
       .then(data => setExpenses(data))
       .catch(error => console.error('Error fetching data:', error));
@@ -29,7 +29,7 @@ function App() {
     e.preventDefault();
     
     // POST new expense to db.json
-    fetch('http://localhost:3000/expenses', {
+    fetch('https://phase-2-wk-1-code-challenge-1.onrender.com/expenses', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -50,7 +50,7 @@ function App() {
 
   const deleteExpense = (id) => {
     // DELETE expense from db.json
-    fetch(`http://localhost:3000/expenses/${id}`, {
+    fetch(`https://phase-2-wk-1-code-challenge-1.onrender.com/expenses/${id}`, {
       method: 'DELETE',
     })
     .then(() => {
