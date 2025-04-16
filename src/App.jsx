@@ -45,6 +45,14 @@ function App() {
       setExpenses([...expenses, newExpense]);
       setFormData({ expense: '', description: '', category: '', price: '', date: '' });
     })
+         Swal.fire({
+        title: "Success!",
+        text: "Expense added successfully",
+        icon: "success",
+        confirmButtonText: "OK",
+       
+         })
+           
     .catch(error => console.error('Error adding expense:', error));
   };
 
@@ -56,6 +64,8 @@ function App() {
     .then(() => {
       setExpenses(expenses.filter(expense => expense.id !== id));
     })
+      
+      Swal.fire("Deleted successfully!")
     .catch(error => console.error('Error deleting expense:', error));
   };
   
