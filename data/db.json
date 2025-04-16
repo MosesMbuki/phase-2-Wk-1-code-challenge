@@ -31,22 +31,6 @@
       "category": "Office Supplies",
       "price": 500,
       "date": "2025-06-12"
-    },
-    {
-      "id": 5,
-      "expense": "Meals",
-      "description": "Chapo and Tea",
-      "category": "Food",
-      "price": 100,
-      "date": "2025-04-05"
-    },
-    {
-      "id": 6,
-      "expense": "Meals",
-      "description": "Chapo and Tea",
-      "category": "Food",
-      "price": 100,
-      "date": "2025-04-16"
     }
   ]
 }
